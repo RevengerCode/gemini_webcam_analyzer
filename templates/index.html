@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Descrizione in tempo reale</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Descrizione in tempo reale</h1>
+        
+        <h2>🎥 Webcam in tempo reale</h2>
+        <img src="{{ url_for('video_feed') }}" width="640" height="480" style="border:1px solid #ccc;">
+
+        <div class="box">
+            <p><strong>Ultima descrizione:</strong></p>
+            <p id="caption" class="caption">--</p>
+            <p><strong>Orario:</strong> <span id="timestamp">--</span></p>
+            <button onclick="aggiornaDescrizione()">Cattura dalla webcam</button>
+        </div>
+
+        <h2>Storico</h2>
+        <ul id="storico" class="storico-list"></ul>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
