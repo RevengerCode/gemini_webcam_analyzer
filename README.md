@@ -48,6 +48,12 @@ source .venv/bin/activate  # su Linux/macOS
 pip install -r requirements.txt
 ```
 
-4.Crea un file .env con la tua chiave API Gemini
+4.Crea un file .env con la tua chiave API Gemini:
+```bash
+API_KEY=la_tua_api_key_google
+```
 
-5. Avvia l'app
+5. Avvia l'app e vai in localhost
+```bash
+python app.py
+```
