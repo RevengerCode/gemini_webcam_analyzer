@@ -3,7 +3,7 @@
 Questa web app, sviluppata con Flask, consente di monitorare in tempo reale ciò che accade davanti a una webcam locale. Ogni 5 secondi oppure ogni volta che si clicca sul pulsante di cattura, il sistema cattura un'immagine e la invia a Gemini 2.0 Flash. Il modello analizza l'immagine e restituisce una breve descrizione testuale del comportamento osservato.
 
 Tutte le descrizioni generate vengono poi salvate automaticamente in un database MySQL, insieme al relativo timestamp, permettendo così la costruzione di uno storico consultabile e utilizzabile per analisi successive.
----
+
 
 ## 🚀 Funzionalità
 
